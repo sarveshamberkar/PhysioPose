@@ -34,9 +34,7 @@ pip install -r requirement.txt
 ## Help
 
 create issue if in case of Errors or blocker  
-```
-command to run if program contains helper info
-```
+
 ## Exercises 
 * Side Bend
 * squats
