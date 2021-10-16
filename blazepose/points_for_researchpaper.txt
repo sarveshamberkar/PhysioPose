@@ -1,0 +1,26 @@
+1) data collection
+i)decide phases 
+
+* data gathering method
+
+ii) perform each pose of the phase assign the collected keypoints a unique label  
+
+*data storing in form of json
+
+iii) data of a single exercise which consititute of several phases stored in a 
+separate file 
+
+2)model training
+classification: build a classifier to explicitly detect phases of the exercise usinf neural network
+specs:
+input layer 34
+hidden layer:16,activation:relu ,kernel initialier:fan_avg_normal,
+output: 5,activation: softmax
+
+
+predict:
+1st :
+excersise is divided into phases
+2nd :
+sequence of phases is decided accordingly 
+3rd :
