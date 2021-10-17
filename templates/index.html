@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>PhysioPose!</title>
+</head>
+<body>
+<h1 style="text-align:center">Physiotherapy Exercises</h1>
+<div class="container" style="padding-top:50px">
+    <div class="row">
+        <div class="card" style="width: 23rem; padding:30px; margin-right:10px">
+            <video class="card-img-top" width="320" height="240" controls loop muted>
+                <source src="static/leg_raise.mp4" type="video/mp4">
+            </video>
+            <div class="card-body">
+                <h5 class="card-title">leg raise</h5>
+                <p class="card-text">Side leg raises involve abducting, or pushing away, the leg from your midline. It’s a great way to build strength in the outer thighs and the hip abductors</p>
+                <a href="{{url_for('sidelunges')}}" class="btn btn-primary disabled"  >Perform</a>
+            </div>
+        </div>
+        <div class="card" style="width: 23rem; padding:30px; margin-right:10px">
+            <video class="card-img-top" width="320" height="240" controls loop muted>
+                <source src="static/side_bend.mp4" type="video/mp4">
+            </video>
+            <div class="card-body">
+                <h5 class="card-title">side bend</h5>
+                <p class="card-text">The side stretch exercise stretches and strengthens the intercostal muscles. These are the muscles between the ribs. They help support the ribs.</p>
+                <a href="{{url_for('sidebend')}}" class="btn btn-primary">Perform</a>
+            </div>
+        </div>
+        <div class="card" style="width: 23rem; padding:30px; margin-right:10px" >
+            <video class="card-img-top" width="320" height="240" controls loop muted>
+                <source src="static/squats_trim.mp4" type="video/mp4">
+            </video>
+            <div class="card-body">
+                <h5 class="card-title">squat</h5>
+                <p class="card-text">A squat is a strength exercise in which the trainee lowers their hips from a standing position and then stands back up. </p>
+                <a href="{{url_for('squat')}}" class="btn btn-primary">Perform</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+-->
+</body>
+</html>
